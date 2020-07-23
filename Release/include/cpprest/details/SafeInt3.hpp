@@ -2299,10 +2299,7 @@ public:
         }
         else if (bHigh == 0)
         {
-            if (aHigh != 0)
-            {
-                *pRet = (unsigned __int64)aHigh * (unsigned __int64)bLow;
-            }
+            *pRet = (unsigned __int64)aHigh * (unsigned __int64)bLow;
         }
         else
         {
