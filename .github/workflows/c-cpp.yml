@@ -6,7 +6,6 @@ on:
   pull_request:
     branches: [ master ]
   workflow_dispatch:
-    pull_request_review: [ master ]
     
 jobs:
   build:
@@ -16,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Dependencies
-      run: ./dependencies.sh 
+      run: ./.github/workflows/scripts/dependencies.sh 
     - name: configure
       run: ./configure
     - name: make
