@@ -20,3 +20,5 @@ jobs:
       run: ./.github/workflows/scripts/build.sh 
     - name: test
       run: ./.github/workflows/scripts/test.sh
+    - name: Codeql Analysis
+      run: ./.github/workflows/scripts/codeql.sh
